@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "/client/build")));
 app.use(express.urlencoded({extended:true}));
-mongoose.connect('mongodb+srv://user_me:'+process.env.PWD+'@cluster0.cwmom.mongodb.net/DishDB?retryWrites=true&w=majority/', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://user_me:"+process.env.PASS+"@cluster0.cwmom.mongodb.net/DishDB?retryWrites=true&w=majority/", {useNewUrlParser: true, useUnifiedTopology: true});
 const dishSchema = new Schema({
   name:String,
   price:Number
