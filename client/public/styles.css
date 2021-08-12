@@ -1,0 +1,104 @@
+body {
+  background-color: #F1F1F1;
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  font-size: 1.1rem;
+  color: #23120B;
+}
+.menu-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  width: 60%;
+  margin: auto;
+  border: 1px solid #23120B;
+  border-radius: 10px;
+}
+.flex-item {
+  width: 20%;
+  position: relative;
+}
+input[type="checkbox"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+h2 {
+  font-size: 1.rem;
+  text-align: center;
+  color: #23120B;
+}
+.btn {
+  background: #FDB827;
+  background-image: -webkit-linear-gradient(top, #FDB827, #FDB827);
+  background-image: -moz-linear-gradient(top, #FDB827, #FDB827);
+  background-image: -ms-linear-gradient(top, #FDB827, #FDB827);
+  background-image: -o-linear-gradient(top, #FDB827, #FDB827);
+  background-image: linear-gradient(to bottom, #FDB827, #FDB827);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+}
+.btn {
+  background: #FDB827;
+  background-image: -webkit-linear-gradient(top, #FDB827, #FDB827);
+  background-image: -moz-linear-gradient(top, #FDB827, #FDB827);
+  background-image: -ms-linear-gradient(top, #FDB827, #FDB827);
+  background-image: -o-linear-gradient(top, #FDB827, #FDB827);
+  background-image: linear-gradient(to bottom, #FDB827, #FDB827);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #1f628d 2px;
+  text-decoration: none;
+  margin: 20px auto;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+.btn-div {
+  margin: auto;
+  width: 200px;
+}
+.order-div {
+  position: relative;
+}
+.right-btn {
+  position: absolute;
+  right: 0;
+}
+
+.pdf-flex {
+  border: 0;
+  text-align: left;
+  border: 1px solid #23120B;
+  border-radius: 0;
+}
+.pdf-flex-item {
+  width: 20%;
+}
+.cost {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header {
+  width: 300px;
+}
+.def {
+  width: 300px;
+}
