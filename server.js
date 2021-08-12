@@ -24,7 +24,7 @@ const listSchema = new Schema({
 })
 const Dish = mongoose.model("Dish",dishSchema);
 const List = mongoose.model("List",listSchema);
-
+//when an order is placed ids are sent in array
 app.post("/add",function(req,res){
   const arr = req.body.ids;
   console.log(arr);
@@ -41,6 +41,7 @@ app.post("/add",function(req,res){
   })
 
 });
+//quantity and cost of items is checked
 app.get("/bill", function(req,res){
   console.log("cf");
   Dish.find(function(err,result){
@@ -62,6 +63,7 @@ app.get("/bill", function(req,res){
       let costAt = 0;
       let tip = 0;
       let costBt = 0;
+      //to calculate the quantity of every dish ordered
       result.forEach((item) => {
         obj1 = {
           name: item.name,
@@ -92,6 +94,7 @@ app.get("/bill", function(req,res){
     }
   });
 });
+//no. fo dishes in menu are obtained from DB
 app.get("/getDishes", async function(req, res){
   await List.find(function(err,result) {
     if(err)
